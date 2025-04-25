@@ -1,4 +1,4 @@
-// Arrays
+// Arrays for each part of the excuse
 let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
 let action = ['ate', 'peed on', 'crushed', 'broke'];
 let what = ['my homework', 'my phone', 'the car', 'my project'];
@@ -14,7 +14,7 @@ function generateExcuse() {
   return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
 }
 
-// Set the excuse when the page loads
+// When page loads, set a new excuse
 window.onload = function() {
   document.getElementById("excuse").innerHTML = generateExcuse();
 };
